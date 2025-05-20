@@ -6,6 +6,6 @@ Feel free to browse and reach out if you'd like to connect!
 
 # Design 
 
-1) ![alt text](/design/image.png)
-2) ![alt text](/design/image.png)
-3) ![alt text](/design/image.png)
+1) ![alt text](/public/design/image.png)
+2) ![alt text](/public/design/image.png)
+3) ![alt text](/public/design/image.png)
