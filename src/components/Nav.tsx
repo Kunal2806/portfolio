@@ -36,15 +36,15 @@ const Nav = () => {
             <div className="pl-60 w-full flex justify-between items-center text-sm -translate-2">
                 <div className="flex text-white gap-4 text-center">
                     <div className="flex flex-col items-center">
-                        <svg className={pathname == "/home" ? "" : "invisible"} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3b82f6"><path d="M480-360 280-560h400L480-360Z"/></svg>                    
+                        <svg className={pathname == "/home" ? "transition duration-800 ease-in-out" : "invisible"} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3b82f6"><path d="M480-360 280-560h400L480-360Z"/></svg>                    
                         <Link to="/home" 
-                            className= {pathname =="/home" ?"border px-5 py-1 pt-2 font-Lato rounded-md flex flex-col items-center justify-center transition duration-800 ease-in-out  border-[#3b82f6] hover:border-[#3b83f6e1]":
+                            className= {pathname =="/home" ?" border px-5 py-1 pt-2 font-Lato rounded-md flex flex-col items-center justify-center transition duration-800 ease-in-out  border-[#3b82f6] hover:border-[#3b83f6e1]":
                                 "border px-5 py-1 pt-2 font-Lato rounded-md flex flex-col items-center justify-center transition duration-800 ease-in-out"}  >
                             HOME
                         </Link>
                     </div>
                     <div className="flex flex-col items-center">
-                        <svg className={pathname == "/project" ? "" : "invisible"}  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D1D3D4"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                        <svg className={pathname == "/project" ? "transition duration-800 ease-in-out" : "invisible"}  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D1D3D4"><path d="M480-360 280-560h400L480-360Z"/></svg>
                         <Link to="/project" 
                             className= {pathname =="/project" ?"border px-5 py-1 pt-2 font-Lato rounded-md flex flex-col items-center justify-center transition duration-800 ease-in-out  border-[#d1d3d4a9] hover:border-[#ffffff]":
                                 "border px-5 py-1 pt-2 font-Lato rounded-md flex flex-col items-center justify-center transition duration-800 ease-in-out"}  >
@@ -52,7 +52,7 @@ const Nav = () => {
                         </Link>
                     </div>
                     <div className="flex flex-col items-center">
-                        <svg className={pathname == "/contact" ? "" : "invisible"}  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#70FFAF"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                        <svg className={pathname == "/contact" ? "transition duration-800 ease-in-out" : "invisible"}  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#70FFAF"><path d="M480-360 280-560h400L480-360Z"/></svg>
                         <Link to="/contact"
                             className= {pathname =="/contact" ?"border px-5 py-1 pt-2 font-Lato rounded-md flex flex-col items-center justify-center transition duration-800 ease-in-out  border-[#70FFAF] hover:border-[#70ffaed2]":
                                 "border px-5 py-1 pt-2 font-Lato rounded-md flex flex-col items-center justify-center transition duration-800 ease-in-out"}  >
