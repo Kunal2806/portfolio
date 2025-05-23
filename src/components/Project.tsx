@@ -3,15 +3,21 @@ function Project() {
     const projectList = [
         {
             src:"./projectImg/chat.png",
-            disc:"A chat website that does not store any type of user data.All data is deleted when the user disconnects from the server."
+            disc:"A chat website that does not store any type of user data.All data is deleted when the user disconnects from the server.",
+            link:"https://github.com/Kunal2806/Chat",
+            live:"",
         },
         {
             src:"./projectImg/todo.png",
-            disc:"A full-stack To-Do application that allows users to manage tasks with secure authentication"
+            disc:"A full-stack To-Do application that allows users to manage tasks with secure authentication",
+            link:"https://github.com/Kunal2806/ToDo",
+            live:" https://to-do-virid-xi.vercel.app/",
         },
         {
             src:"./projectImg/portfolio.png",
-            disc:"A responsive portfolio showcasing my projects and skills with a focus on clean design and smooth user experience."
+            disc:"A responsive portfolio showcasing my projects and skills with a focus on clean design and smooth user experience.",
+            link:"https://github.com/Kunal2806/portfolio",
+            live:"",
         },
     ]
     return (
@@ -44,8 +50,25 @@ function Project() {
                             <div className="p-2 h-[250px] flex items-center ">
                                 <img className="rounded-2xl" src={_prop.src} alt="project_ss" />
                             </div>
-                            <div className="bg-[#15161A] h-[240px] text-center p-10 m-2">
+                            <div className="bg-[#15161A] h-[240px] text-center p-10 m-2 flex flex-col justify-between">
                                 <p className="text-white font-Lato text-xl">{_prop.disc}</p>
+                                <div className="flex justify-between items-center">
+                                    {
+                                        _prop.live?
+                                        <a href={_prop.live} target="_blank">
+                                            <p className="text-[#d1d3d4a9] hover:text-blue-500">Live Link {"->"}</p>
+                                        </a>
+                                        : <div/>
+                                    }
+                                    {
+                                        _prop.link?
+                                        <a href={_prop.link} target="_blank">
+                                            <img className="size-8" src="./images/github-icon.svg" alt="githublink" />
+                                        </a>
+                                        : <div/>
+                                    }
+                                    
+                                </div>
                             </div>                           
                         </div>
                     ))
