@@ -45,9 +45,9 @@ function Project() {
                 {
                     projectList.map((_prop,i)=>(
                         <div key={i}
-                            className="border-2 w-[400px] h-[500px] border-[#d1d3d4a9] hover:border-white"
+                            className="border-2 w-[360px] h-[500px] border-[#d1d3d4a9] hover:border-white"
                         >
-                            <div className="p-2 h-[250px] flex items-center ">
+                            <div className="p-2 h-[240px] flex items-center ">
                                 <img className="rounded-2xl" src={_prop.src} alt="project_ss" />
                             </div>
                             <div className="bg-[#15161A] h-[240px] text-center p-10 m-2 flex flex-col justify-between">
