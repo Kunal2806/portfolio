@@ -17,7 +17,7 @@ function Project() {
             src:"./projectImg/portfolio.png",
             disc:"A responsive portfolio showcasing my projects and skills with a focus on clean design and smooth user experience.",
             link:"https://github.com/Kunal2806/portfolio",
-            live:"",
+            live:"https://portfolio-pycy.vercel.app/",
         },
     ]
     return (
