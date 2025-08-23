@@ -21,9 +21,11 @@ function Home() {
         "./images/sql.svg",
     ]
     return (
-        <div style={{position:"relative", height: "calc(90vh - 80px)", width: "95vw"}} className="flex justify-center items-center mt-[27px]">
-            <div  className="pointer-events-none absolute top-0 left-0 right-0 bottom-0 text-white text-5xl flex flex-col justify-center items-center">
-                <h1 className="font-Lato">Hi, I'm Kunal Goswami</h1>
+                <h1 className="font-Lato text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">Hi, I'm Kunal Goswami</h1>
+                <h2 className="font-Lato text-lg sm:text-xl md:text-2xl lg:text-3xl mt-2">FULL STACK</h2>
+                <hr className="bg-[#3b82f6] border-[#3b82f6] h-[2px] sm:h-[3px] w-32 sm:w-48 md:w-64 m-1 rounded-full" />
+                <h2 className="font-Jaro text-xl sm:text-2xl md:text-3xl lg:text-4xl">Web Developer</h2>
+                <p className="text-sm sm:text-base md:text-lg font-Lato mt-4 text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl px-4">
                 <h2 className="font-Lato text-3xl mt-2">FULL STACK</h2>
                 <hr className="bg-[#3b82f6] border-[#3b82f6] h-[3px] w-64 m-1 rounded-full" />
                 <h2 className="font-Jaro">Web Developer</h2>
@@ -32,20 +34,20 @@ function Home() {
                     Explore my professional background, achievements, and projects.
                 </p>
             </div>
-            <div ref={constraintsRefs} className="grid grid-cols-5 h-full w-full place-items-center" >
+            <div ref={constraintsRefs} className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 h-full w-full place-items-center gap-2 sm:gap-4 p-4">
                 {
                     skills.map((_src, i)=> {
                         if(i==7) {
                             return [
-                                <div key="empty" className="size-16"/>,
-                                <motion.img className="size-16 zindex-9999 cursor-grab" key={i} src={_src} alt="skill" 
+                                <div key="empty" className="size-8 sm:size-12 md:size-16"/>,
+                                <motion.img className="size-8 sm:size-12 md:size-16 z-50 cursor-grab" key={i} src={_src} alt="skill" 
                                     drag
                                     dragConstraints={constraintsRefs}
                                 />
                             ] ;
                         }
                         return(
-                            <motion.img className="size-16 zindex-9999 cursor-grab" key={i} src={_src} alt="skill" 
+                            <motion.img className="size-8 sm:size-12 md:size-16 z-50 cursor-grab" key={i} src={_src} alt="skill" 
                                 drag
                                 dragConstraints={constraintsRefs}
                             /> 
@@ -53,7 +55,6 @@ function Home() {
                     })
                 }
             </div>
-            
         </div>
     )
 }
