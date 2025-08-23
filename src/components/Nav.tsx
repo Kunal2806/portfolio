@@ -13,7 +13,7 @@ const Nav = () => {
                 <div className="flex items-center cursor-pointer">
                     <img
                         src={hoverLogo.url}
-                        alt="logo"
+                        alt="Kunal Goswami logo"
                         className="size-[42px]"
                         onMouseEnter={() => setHoverLogo({ url: "/images/logo1.svg", text: "KG 2806" })}
                         onMouseLeave={() => setHoverLogo({ url: "/images/logo.svg", text: "Kunal Goswami" })}
@@ -24,6 +24,7 @@ const Nav = () => {
                     href="https://drive.google.com/file/d/1tTz8dA1DSoSbfQQIOo0Q_dLRz_9VhzWt/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Download Kunal Goswami's Resume"
                 >
                     <div className={ pathname == '/home' ? `font-Lato text-black pr-6 py-2 pl-7 border-2 transition duration-800 ease-in-out  rounded-xl text-xl flex items-center justify-center bg-[#3b82f6] hover:bg-[#3b83f6e1]` :
                         pathname == '/project' ? `font-Lato text-black pr-6 py-2 pl-7 border-2 transition duration-800 ease-in-out  rounded-xl text-xl flex items-center justify-center bg-[#d1d3d4a9] hover:bg-[#ffffff]` :

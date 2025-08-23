@@ -23,9 +23,14 @@ function Home() {
     return (
         <div style={{position:"relative", height: "calc(90vh - 80px)", width: "95vw"}} className="flex justify-center items-center mt-[27px]">
             <div  className="pointer-events-none absolute top-0 left-0 right-0 bottom-0 text-white text-5xl flex flex-col justify-center items-center">
-                <h1 className="font-Lato">FULL STACK</h1>
+                <h1 className="font-Lato">Hi, I'm Kunal Goswami</h1>
+                <h2 className="font-Lato text-3xl mt-2">FULL STACK</h2>
                 <hr className="bg-[#3b82f6] border-[#3b82f6] h-[3px] w-64 m-1 rounded-full" />
-                <h1 className="font-Jaro">Web Developer</h1>
+                <h2 className="font-Jaro">Web Developer</h2>
+                <p className="text-lg font-Lato mt-4 text-center max-w-2xl">
+                    Passionate about creating innovative web solutions with modern technologies. 
+                    Explore my professional background, achievements, and projects.
+                </p>
             </div>
             <div ref={constraintsRefs} className="grid grid-cols-5 h-full w-full place-items-center" >
                 {

@@ -2,7 +2,11 @@ function Contact() {
     return (
         <div style={{height:"calc(100vh - 100px"}} className=" flex justify-between itmes-center">
             <div className="flex flex-col items-center justify-center w-1/2 text-white font-Lato">
-                <p className="text-5xl">Turning Vision Into Reality <br/>With Code And Design.</p>
+                <h1 className="text-5xl mb-4">Connect with Kunal Goswami</h1>
+                <p className="text-3xl text-center">Turning Vision Into Reality <br/>With Code And Design.</p>
+                <p className="text-lg mt-4 text-center text-gray-300">
+                    Ready to collaborate? Let's discuss your next project and bring your ideas to life.
+                </p>
                 <div className="flex justify-evenly w-full mt-15">
                     <a href="https://www.linkedin.com/in/kunal2806-dev/" target="_blank">
                         <div className="flex bg-[#70FFAF] text-black py-2 px-8 rounded-xl text-3xl">

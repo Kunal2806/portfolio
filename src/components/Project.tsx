@@ -30,13 +30,13 @@ function Project() {
             >
                 <h1 
                     className="text-2xl"
-                > Welcome to
+                > Welcome to Kunal Goswami's
                 </h1>
                 <h1 
                     className="text-4xl font-Jaro border-2 px-10 rounded-full bg-[#d1d3d4a9] text-[#000] py-1"
-                > REPOSITORY    
+                > PROJECT REPOSITORY    
                 </h1>
-                <p className="text-xs m-2 text-[#d1d3d4a9]">Each project reflects my journey, experiments,<br/> and learning experiences.</p>
+                <p className="text-xs m-2 text-[#d1d3d4a9]">Explore Kunal Goswami's projects and achievements. Each project reflects my professional journey, <br/>experiments, and learning experiences in web development.</p>
             </div>
 
             <div
