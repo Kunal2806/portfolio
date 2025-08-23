@@ -44,6 +44,8 @@ function Home() {
                                 <div key="empty" className="size-8 sm:size-12 md:size-16"/>,
                                 <motion.img className="size-8 sm:size-12 md:size-16 z-50 cursor-grab" key={i} src={_src} alt="skill" 
                                     drag
+                            ]
+                        }
                         <div className="flex items-center justify-center bg-[#70FFAF] text-black py-2 px-4 sm:px-6 md:px-8 rounded-xl text-lg sm:text-xl md:text-2xl lg:text-3xl w-full sm:w-auto">
                             <img src="./images/linkedin.svg" alt="linkedin" className="w-6 h-6 sm:w-8 h-8" />
                             <h1 className="ml-2">LinkedIn</h1>
@@ -58,6 +60,10 @@ function Home() {
                 <img src="./images/logo1.svg" alt="Kunal Goswami logo" className="w-48 h-48 sm:w-64 h-64 md:w-80 h-80 lg:w-96 h-96" />
             </div>
         </div>
+                    }
+                    )
+                }
+    )
     )
 }
 
