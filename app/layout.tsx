@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <body className="w-[90%] mx-auto">
         <Navbar />
         <LeftSidebar />
         <RightSidebar email="kunalgoswami.2806@gmail.com" />
