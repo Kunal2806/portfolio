@@ -26,14 +26,11 @@ export default function Navbar() {
       <header
         style={{
           fontFamily: "var(--font-mono)",
-          backgroundColor: scrolled ? "rgba(10,25,47,0.85)" : "transparent",
-          backdropFilter: scrolled ? "blur(10px)" : "none",
-          WebkitBackdropFilter: scrolled ? "blur(10px)" : "none",
           boxShadow: scrolled ? "0 10px 30px -10px rgba(2,12,27,0.7)" : "none",
           height: scrolled ? "64px" : "80px",
           transition: "all 0.3s ease",
         }}
-        className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-12 animate-[fadeInDown_0.5s_ease_forwards]"
+        className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-12 animate-[fadeInDown_0.5s_ease_forwards] bg-background/75 backdrop-blur-md"
       >
         {/* ── Logo ── */}
         <Link href="/" aria-label="Home" className="flex items-center hover:opacity-75 transition-opacity duration-200">
@@ -52,7 +49,7 @@ export default function Navbar() {
               fill="var(--color-accent)"
               fontWeight="400"
             >
-              B
+              KG
             </text>
           </svg>
         </Link>
@@ -64,8 +61,8 @@ export default function Navbar() {
               <li key={label}>
                 <a
                   href={href}
-                  style={{ fontFamily: "var(--font-mono)", color: "var(--color-primary)" }}
-                  className="text-[13px] no-underline px-3 py-2 transition-colors duration-200 hover:[color:var(--color-accent)]"
+                  style={{ fontFamily: "var(--font-mono)" }}
+                  className="text-[13px] no-underline px-3 py-2 transition-colors duration-200 text-primary hover:text-accent"
                 >
                   <span style={{ color: "var(--color-accent)", marginRight: "4px", fontSize: "12px" }}>
                     0{i + 1}.
