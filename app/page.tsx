@@ -4,9 +4,9 @@ import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <HeroSection />
       <div className="h-screen"></div>
-    </div>
+    </>
   );
 }

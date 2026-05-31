@@ -1,26 +1,26 @@
 export default function HeroSection() {
   return (
-    <section className="flex flex-col justify-center min-h-screen px-36 max-w-5xl md:px-24 sm:px-6 pt-24">
+    <section className="flex flex-col justify-center ">
 
       {/* Greeting */}
       <p
-        style={{ fontFamily: "var(--font-mono)", color: "var(--color-green)", animationDelay: "100ms" }}
-        className="text-sm mb-5 ml-1 opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
+        style={{ fontFamily: "var(--font-mono)", color: "var(--color-accent)", animationDelay: "100ms" }}
+        className="text-md ml-1 opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
       >
         Hi, my name is
       </p>
 
       {/* Name */}
       <h1
-        style={{ color: "var(--color-white-slate)", animationDelay: "200ms" }}
-        className="text-[clamp(40px,8vw,80px)] font-semibold leading-tight m-0 mb-2 opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
+        style={{ color: "var(--color-heading)", animationDelay: "200ms" }}
+        className="text-[clamp(40px,8vw,80px)] font-semibold leading-tight opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
       >
         Kunal Goswami.
       </h1>
 
       {/* Tagline */}
       <h2
-        style={{ color: "var(--color-slate)", animationDelay: "300ms" }}
+        style={{ color: "var(--color-muted)", animationDelay: "300ms" }}
         className="text-[clamp(30px,6vw,70px)] font-semibold leading-tight m-0 mb-8 opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
       >
         I build things for the web.
@@ -28,7 +28,7 @@ export default function HeroSection() {
 
       {/* Description */}
       <p
-        style={{ color: "var(--color-slate)", fontFamily: "var(--font-sans)", animationDelay: "400ms" }}
+        style={{ color: "var(--color-muted)", fontFamily: "var(--font-sans)", animationDelay: "400ms" }}
         className="max-w-xl text-[clamp(14px,2vw,18px)] leading-relaxed mb-12 opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
       >
         I&apos;m a software engineer specializing in building (and occasionally designing)
@@ -36,12 +36,12 @@ export default function HeroSection() {
         human-centered products at{" "}
         <a
           href="#"
-          style={{ color: "var(--color-green)" }}
+          style={{ color: "var(--color-accent)" }}
           className="no-underline relative group"
         >
           Gennext It
           <span
-            style={{ backgroundColor: "var(--color-green)" }}
+            style={{ backgroundColor: "var(--color-accent)" }}
             className="absolute bottom-[-1px] left-0 w-0 h-px transition-all duration-200 group-hover:w-full"
           />
         </a>
@@ -53,8 +53,8 @@ export default function HeroSection() {
         href="#projects"
         style={{
           fontFamily: "var(--font-mono)",
-          color: "var(--color-green)",
-          border: "1px solid var(--color-green)",
+          color: "var(--color-accent)",
+          border: "1px solid var(--color-accent)",
           borderRadius: "4px",
           animationDelay: "500ms",
         }}
