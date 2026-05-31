@@ -13,7 +13,7 @@ export default function HeroSection() {
       {/* Name */}
       <h1
         style={{ color: "var(--color-heading)", animationDelay: "200ms" }}
-        className="text-[clamp(40px,8vw,80px)] font-semibold leading-tight opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
+        className="text-[clamp(40px,8vw,80px)] font-bold leading-tight opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
       >
         Kunal Goswami.
       </h1>
@@ -21,9 +21,9 @@ export default function HeroSection() {
       {/* Tagline */}
       <h2
         style={{ color: "var(--color-muted)", animationDelay: "300ms" }}
-        className="text-[clamp(30px,6vw,70px)] font-semibold leading-tight m-0 mb-8 opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
+        className="text-[clamp(20px,6vw,60px)] font-bold leading-tight m-0 mb-8 opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
       >
-        I build things for the web.
+        I build for the web & mobile.      
       </h2>
 
       {/* Description */}
@@ -31,18 +31,16 @@ export default function HeroSection() {
         style={{ color: "var(--color-muted)", fontFamily: "var(--font-sans)", animationDelay: "400ms" }}
         className="max-w-xl text-[clamp(14px,2vw,18px)] leading-relaxed mb-12 opacity-0 animate-[fadeInUp_0.5s_ease_forwards]"
       >
-        I&apos;m a software engineer specializing in building (and occasionally designing)
-        exceptional digital experiences. Currently, I&apos;m focused on building accessible,
-        human-centered products at{" "}
+        This portfolio showcases products, experiments, and solutions inspired by problems I&apos;ve encountered and decided to solve through technology. Along the way, I have shared my experiences and insights through my writing on {""}
         <a
           href="#"
           style={{ color: "var(--color-accent)" }}
-          className="no-underline relative group"
+          className="no-underline relative group "
         >
-          Gennext It
+          {"<Blogs />"}
           <span
             style={{ backgroundColor: "var(--color-accent)" }}
-            className="absolute bottom-[-1px] left-0 w-0 h-px transition-all duration-200 group-hover:w-full"
+            className="absolute bottom-px left-0 w-0 h-px transition-all duration-200 group-hover:w-full"
           />
         </a>
         .
