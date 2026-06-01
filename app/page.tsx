@@ -1,5 +1,6 @@
 // app/page.tsx
 
+import AboutSection from "@/components/AboutSection";
 import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
@@ -8,7 +9,9 @@ export default function Home() {
       <section id="home" className="pt-20">
         <HeroSection />
       </section>
-      <div id="about" className="h-screen"></div>
+      <section id="about">
+        <AboutSection />
+      </section>
     </main>
   );
 }
