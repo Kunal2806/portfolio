@@ -46,7 +46,7 @@
 
   ::selection {
     background-color: var(--color-surface-highlight);
-    color: var(--color-accent);
+    /* color: var(--color-accent); */
   }
 
   :focus-visible {

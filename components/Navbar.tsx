@@ -30,10 +30,10 @@ export default function Navbar() {
           height: scrolled && !menuOpen ? "64px" : "80px",
           transition: "all 0.3s ease",
         }}
-        className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-12 animate-[fadeInDown_0.5s_ease_forwards] bg-background/75 backdrop-blur-md"
+        className="fixed top-0 left-0 right-0 z-100 flex items-center justify-between px-12 animate-[fadeInDown_0.5s_ease_forwards] bg-background/75 backdrop-blur-md"
       >
         {/* ── Logo ── */}
-        <Link href="/" aria-label="Home" className="flex items-center hover:opacity-75 transition-opacity duration-200">
+        <Link href="#home" aria-label="Home" className="flex items-center hover:opacity-75 transition-opacity duration-200">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 115" width="50" height="50" fill="none">
             <polygon
               points="50,5 95,27.5 95,87.5 50,110 5,87.5 5,27.5"
