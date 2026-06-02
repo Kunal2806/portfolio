@@ -8,7 +8,7 @@ export default function AboutSection() {
   // ];
 
   return (
-    <section id="about" className="py-24 ">
+    <section>
 
       {/* ── Heading ── */}
       <h2
@@ -18,7 +18,7 @@ export default function AboutSection() {
         <span style={{ color: "var(--color-accent)" }} className="text-xl">01.</span>
         About Me
         {/* horizontal line */}
-        <span className="block w-full max-w-xs h-px bg-muted ml-4" />
+        <span className="block w-full max-w-xs h-px bg-surface-highlight ml-4" />
       </h2>
 
       {/* ── Content grid ── */}
